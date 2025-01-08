@@ -14,8 +14,9 @@ committing, branching and running diffs. Some plumbing commands are also impleme
 
 ## Usage
 
-Clone this repository and run the following command:
+Clone this repository and run the following command to build. The executable will
+be found in the `build/` directory.
 
 ```sh
-./git.sh <args>
+./build.sh
 ```

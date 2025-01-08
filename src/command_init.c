@@ -1,8 +1,5 @@
 #include "main.h"
-
-int command_init(void) {
-  fprintf(stderr, "Logs from your program will appear here!\n");
-
+int command_init(int argc, char *argv[]) {
   if (mkdir(".git", 0755) == -1 || mkdir(".git/objects", 0755) == -1 ||
       mkdir(".git/refs", 0755) == -1 || mkdir(".git/refs/heads", 0755) == -1) {
     fprintf(stderr, "Failed to create directories: %s\n", strerror(errno));
